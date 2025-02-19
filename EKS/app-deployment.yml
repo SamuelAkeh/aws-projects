@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vite-app
+  labels:
+    app: vite-app 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: vite-app
+  template:
+    metadata:
+      labels:
+        app: vite-app
+    spec:
+      containers:
+      - name: vite-app
+        image: <your-account-id>.dkr.ecr.<your-region>.amazonaws.com/vite-app-prod:latest
+        ports:
+        - containerPort: 80

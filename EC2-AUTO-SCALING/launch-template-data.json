@@ -1,0 +1,14 @@
+{
+  "NetworkInterfaces": [
+    {
+      "DeviceIndex": 0,
+      "AssociatePublicIpAddress": true,
+      "Groups": [
+        "sg-06ab9a2d717aa123d"
+      ],
+      "DeleteOnTermination": true
+    }
+  ],
+  "ImageId": "ami-03a725ae7d906005d",
+  "InstanceType": "t2.micro"
+}
